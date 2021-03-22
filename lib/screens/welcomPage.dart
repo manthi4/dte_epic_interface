@@ -1,11 +1,12 @@
 import 'package:dte_epic_interface/components/bigButton.dart';
+import 'package:dte_epic_interface/screens/graphPage.dart';
 import 'package:flutter/material.dart';
 
 class WelcomePage extends StatelessWidget {
   static final route = "welcome";
   ///TODO: Implement FireBase Auth here
   ///TODO: Check if the user is already logged in, if so then go directly to the main app (skipping the welcome and login screens)
-
+  ///TODO: hghd
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +22,7 @@ class WelcomePage extends StatelessWidget {
               buttonText: "Login",
               onClick: (){
                 ///TODO: Create LoginPage and uncomment / check that this button works
-                // Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginScreen(loggingIn: true,)));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>graphPage()));
               },
             )
           ],
