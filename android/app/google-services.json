@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "523086647681",
+    "project_id": "dte-epic-interface",
+    "storage_bucket": "dte-epic-interface.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523086647681:android:c1f502bc0e2bf9524c9880",
+        "android_client_info": {
+          "package_name": "com.example.dte_epic_interface"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523086647681-03b66rmhhlmbf1tlvk1ue0fhj2tlgeje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5qTQRoM_iXuR73jpaJpMpFcGzHgpLSwA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "523086647681-03b66rmhhlmbf1tlvk1ue0fhj2tlgeje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
