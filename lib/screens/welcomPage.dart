@@ -31,12 +31,12 @@ class _LoginPageState extends State<WelcomePage> {
 
   Future<void> _login() async {
     try {
+      //TODO: Move this line below actual login. Right now up here just to change page no matter what until auth is fully done
+      Navigator.push(context, MaterialPageRoute(builder: (context)=>graphPage()));
       UserCredential userCredential = await FirebaseAuth
           .instance
           .signInWithEmailAndPassword(email: _email, password: _password);
       print("User: $userCredential");
-      //TODO: Create LoginPage and uncomment / check that this button works
-      Navigator.push(context, MaterialPageRoute(builder: (context)=>graphPage()));
     } on FirebaseAuthException catch (e) {
       print("error: $e");
     } catch (e) {
