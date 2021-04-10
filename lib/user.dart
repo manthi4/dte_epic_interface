@@ -25,7 +25,7 @@ class User {
 
   static Future<void> getUserData() async {
     var userID = currentUser.id;
-    await _fstore.collection('Users').where('id', isEqualTo: "$userID")
+    await _fstore.collection('Users').where('id', isEqualTo: "$userID");
     List<int> vals = [];
 
   }

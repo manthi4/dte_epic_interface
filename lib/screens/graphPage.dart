@@ -2,6 +2,7 @@ import 'package:dte_epic_interface/components/bigButton.dart';
 import 'package:flutter/material.dart';
 import 'package:bezier_chart/bezier_chart.dart';
 import 'package:dte_epic_interface/components/bottomBar.dart';
+import 'package:dte_epic_interface/user.dart';
 
 ///TODO: Use the daily Brazier Scale and make it zoomable
 ///TODO: implement the get Data methods in the user.dart and pull that data to here
@@ -11,16 +12,26 @@ class graphPage extends StatelessWidget {
   static final route = "graph";
   @override
   Widget build(BuildContext context) {
+    final fromDate = DateTime(2017, 05, 22);
+    ///TODO change 2017 to the start/earliest date
+    final toDate = DateTime.now();
+    final date1 = DateTime.now().subtract(Duration(days: 2));
+    final date2 = DateTime.now().subtract(Duration(days: 3));
     return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Expanded(
               child:  Container(
+                height: MediaQuery.of(context).size.height/2,
                 width: MediaQuery.of(context).size.width,
                 child: BezierChart(
-                  bezierChartScale: BezierChartScale.CUSTOM,
-                  xAxisCustomValues: const [0, 5, 10, 15, 20, 25, 30, 35],
+                  fromDate: fromDate,
+                  bezierChartScale: BezierChartScale.WEEKLY,
+                  toDate: toDate,
+                  selectedDate: toDate,
+                  //xAxisCustomValues: const [0, 5, 10, 15, 20, 25, 30, 35],
+                  /*
                   series: const [
                     BezierLine(
                       lineColor: Colors.black,
@@ -38,10 +49,44 @@ class graphPage extends StatelessWidget {
                       ],
                     ),
                   ],
+                  */
+
+                  series: [
+                    BezierLine(
+                      lineColor: Colors.black,
+                      dataPointStrokeColor: Colors.black,
+                      dataPointFillColor: Colors.black,
+                      label: "Duty",
+                      onMissingValue: (dateTime) {
+                        return 0.0;
+                      },
+                        /*
+                        if (dateTime.day.isEven) {
+                          return 10.0;
+                        }
+                        return 5.0;
+                      },
+                      */
+
+                      data: User.getSampleData(),
+                      /*
+
+                      data: [
+                        DataPoint<DateTime>(value: 10, xAxis: date1),
+                        DataPoint<DateTime>(value: 50, xAxis: date2),
+                      ],
+
+                       */
+                    ),
+                  ],
+
+
                   config: BezierChartConfig(
+                    /*
                     verticalIndicatorStrokeWidth: 3.0,
                     showVerticalIndicator: true,
-                    contentWidth: MediaQuery.of(context).size.width * 2, /// Dont set this when using chart scale weeks
+                    //contentWidth: MediaQuery.of(context).size.width * 2, /// Dont set this when using chart scale weeks
+
                     xAxisTextStyle: TextStyle(color: Colors.black),
                     yAxisTextStyle: TextStyle(color: Colors.black),
 
@@ -49,7 +94,25 @@ class graphPage extends StatelessWidget {
                     pinchZoom: true,
                     displayYAxis: true,
                     displayLinesXAxis: true,
-                    stepsYAxis: 20,
+                    stepsYAxis: 10,
+                    */
+                    verticalIndicatorStrokeWidth: 3.0,
+                    showVerticalIndicator: true,
+
+                    xAxisTextStyle: TextStyle(color: Colors.black),
+                    yAxisTextStyle: TextStyle(color: Colors.black),
+
+                    //verticalIndicatorColor: Colors.black26,
+                    verticalIndicatorColor: Colors.black26,
+                    verticalIndicatorFixedPosition: false,
+                    backgroundColor: Colors.white,
+                    footerHeight: 30.0,
+
+                    displayYAxis: true,
+                    displayLinesXAxis: true,
+                    stepsYAxis: 50,
+                    ///TODO cahnge to max/10
+
                   ),
                 ),
               ),
