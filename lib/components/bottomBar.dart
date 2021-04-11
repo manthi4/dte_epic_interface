@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:dte_epic_interface/screens/graphPage.dart';
+import 'package:dte_epic_interface/screens/homePage.dart';
 
 class bottomBar extends StatelessWidget {
   @override
@@ -9,8 +10,7 @@ class bottomBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           IconButton(icon: Icon(Icons.home_outlined), onPressed: (){
-            ///TODO: link to home page
-            //Navigator.push(context, MaterialPageRoute(builder: (context)=>*page here*()));
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
           }),
           FlatButton(
               onPressed: (){

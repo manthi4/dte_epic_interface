@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:bezier_chart/bezier_chart.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 /// Everything in this class should be static. There is only one user, so instead of instantiating a new user
 /// object whenever we use itm it is much cleaner to use one static class.
