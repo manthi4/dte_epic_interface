@@ -30,6 +30,9 @@ class User {
 
   }
 
+  static Future<void> inputData(String data) async {
+    print(data);
+  }
 
 
   /// User this for testing purposes!

@@ -10,7 +10,8 @@ class bottomBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           IconButton(icon: Icon(Icons.home_outlined), onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
+
+            Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>HomePage()), (Route<dynamic> route) => false);
           }),
           FlatButton(
               onPressed: (){
