@@ -110,7 +110,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		+BZsvhLiPlrFhnJZgT7ohCyo068=
+		UdQAfjd035IrgDs/7yoOlAWu5zg=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		hpldMVOJJfIA+h96yBlcadlMbHA=
+		W54SjMsYw07glcMimRmMvbDwieM=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		XVwAW7oGFJ6/1SstIGBDdhUonow=
+		Kxj1ZG7PsM/yaLnC0iR21FrY754=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/lib/images/blood_pressure.png</key>
 		<data>
@@ -423,6 +423,10 @@
 		<key>Frameworks/openssl_grpc.framework/openssl_grpc</key>
 		<data>
 		Jo7LlvoaboCfAKz2g5Jf2yPWJKI=
+		</data>
+		<key>GoogleService-Info.plist</key>
+		<data>
+		RQRy6PTrOrBFB7vg8VQmES7FlSc=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -725,11 +729,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+BZsvhLiPlrFhnJZgT7ohCyo068=
+			UdQAfjd035IrgDs/7yoOlAWu5zg=
 			</data>
 			<key>hash2</key>
 			<data>
-			TFXYDBvDBgcY/wsMVo9nW02ijFgfQ5Ds1q4EQXcuGpc=
+			FTA1/RJiSmPH/n63hWJMUof7cwUAATe5kOsZW/tKFGE=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -747,11 +751,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hpldMVOJJfIA+h96yBlcadlMbHA=
+			W54SjMsYw07glcMimRmMvbDwieM=
 			</data>
 			<key>hash2</key>
 			<data>
-			wz/8peNXHt0ARNTiTuvEVXv7Ul1TjmFrzJghqOxbjGk=
+			WwVV3QeN+ki3l7vXEcf493Sso9x0ULlMV7L9/mAhlq8=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
@@ -813,11 +817,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XVwAW7oGFJ6/1SstIGBDdhUonow=
+			Kxj1ZG7PsM/yaLnC0iR21FrY754=
 			</data>
 			<key>hash2</key>
 			<data>
-			9gDpDkrKhTIM+9fwQ1+nj7GRwtJbwFQg/+MGX+1tIw4=
+			IKVvDeJ1AxQ8j9NFaNLobol9aFQvaROufcOGmS+IhQI=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/lib/images/blood_pressure.png</key>
@@ -1588,6 +1592,17 @@
 			<key>hash2</key>
 			<data>
 			9cw8jx0M6gA5e3O7mHILSDKhb78FyaY+9ZAbVQbfB38=
+			</data>
+		</dict>
+		<key>GoogleService-Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RQRy6PTrOrBFB7vg8VQmES7FlSc=
+			</data>
+			<key>hash2</key>
+			<data>
+			EMXVdYRZTwE5AfdE2E8kMbGIIZ0V2caac7TJ81ZdaPc=
 			</data>
 		</dict>
 	</dict>

@@ -10,12 +10,12 @@ class bottomBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           IconButton(icon: Icon(Icons.home_outlined), onPressed: (){
-
-            Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>HomePage()), (Route<dynamic> route) => false);
+            // removes slide transition
+            Navigator.pushReplacement(context, PageRouteBuilder(pageBuilder: (context, animation1, animation2) => HomePage(), transitionDuration: Duration(seconds: 0)));
           }),
           FlatButton(
               onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>graphPage()));
+                Navigator.pushReplacement(context, PageRouteBuilder(pageBuilder: (context, animation1, animation2) => graphPage(), transitionDuration: Duration(seconds: 0)));
               },
               child: Icon(Icons.add),
               color: Colors.pink[400],

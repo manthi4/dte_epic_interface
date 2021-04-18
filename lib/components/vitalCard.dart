@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'dart:ui';
 import 'package:dte_epic_interface/user.dart';
 
-
 class VitalCard extends StatelessWidget {
   final String vital;
   final String image;
@@ -13,18 +12,22 @@ class VitalCard extends StatelessWidget {
   final myController = TextEditingController();
 
   pressedVital(BuildContext context) {
+    // adding a vital
     VoidCallback addVital = () => {
-      Navigator.of(context).pop(),
-      User.inputData(myController.text),
-      myController.clear(),
-    };
+          Navigator.of(context).pop(),
+          User.inputData(myController.text),
+          myController.clear(),
+        };
+
+    // pop up once card is clicked
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 6, sigmaY: 6),
-            child:  AlertDialog(
-              title: new Text(vital),
+            child: AlertDialog(
+              title: Text(vital),
+              // user input area style
               content: TextField(
                 controller: myController,
                 cursorColor: Colors.black,
@@ -41,14 +44,16 @@ class VitalCard extends StatelessWidget {
                 ),
               ),
               actions: <Widget>[
-                new TextButton(
-                  child: new Text("Cancel", style: TextStyle(color: Colors.black)),
+                // cancel button
+                TextButton(
+                  child: Text("Cancel", style: TextStyle(color: Colors.black)),
                   onPressed: () {
                     Navigator.of(context).pop();
                     myController.clear();
                   },
                 ),
-                new TextButton(
+                // add button
+                TextButton(
                   child: Text("Add", style: TextStyle(color: Colors.black)),
                   onPressed: () {
                     addVital();
@@ -64,32 +69,44 @@ class VitalCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
         child: Padding(
-          padding: const EdgeInsets.all(15),
-          child: InkWell(
-            onTap: () {
-              pressedVital(context);
-            },
-            child: ClipRRect(
+        padding: const EdgeInsets.all(15),
+        child: InkWell(
+          onTap: () {
+            pressedVital(context);
+          },
+          // card style
+          child: ClipRRect(
               borderRadius: BorderRadius.circular(25),
-              child: Stack(
-                children: <Widget>[
-                  Image(
-                    fit: BoxFit.cover,
-                    image: AssetImage(image),
+              child: Stack(children: <Widget>[
+                Image(
+                  fit: BoxFit.cover,
+                  image: AssetImage(image),
+                  width: 400.0,
+                  height: 350.0,
+                ),
+                Positioned(
+                    bottom: 0,
+                    height: 65,
                     width: 400.0,
-                    height: 350.0,
-                  ),
-                  Positioned(
-                    bottom: 12,
-                    left: 17,
-                    child: Text(
-                      vital, style: TextStyle(fontSize: 30, color: Colors.black),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[700].withOpacity(0.7),
+                        borderRadius: BorderRadius.only(
+                            bottomRight: Radius.circular(25),
+                            bottomLeft: Radius.circular(25))),
+                      child: Padding(
+                        padding: EdgeInsets.fromLTRB(25, 17, 0, 0),
+                        child: Text(
+                          vital,
+                          style: TextStyle(color: Colors.white, fontSize: 25),
+                          textAlign: TextAlign.left,
+                        ),
+                      ),
                     ),
-                  )
-                ]
-              )
-            ),
+                ),
+              ])
           ),
+        ),
         )
     );
   }
