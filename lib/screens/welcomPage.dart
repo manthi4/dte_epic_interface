@@ -55,6 +55,9 @@ class _LoginPageState extends State<WelcomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            Image(
+              image: AssetImage("lib/images/DTElogo copy.jpg"),
+            ),
             TextField(
                 onSubmitted: (value) {
                   _email = value;
@@ -77,19 +80,40 @@ class _LoginPageState extends State<WelcomePage> {
                     hintText: "Enter Password"
                 )
             ),
-            Column(
-              children: [
-                BigButton(
-                  buttonText: "Login",
-                  onClick: _login,
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 20),
+              child: FlatButton(
+                onPressed: (){
+                  _login();
+                },
+                child: Text("Log In", style: TextStyle(color: Colors.white),),
+                color: Colors.black,
+                height: 50,
+                minWidth: 150,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(5),
+                  side: BorderSide(color: Colors.white),
                 ),
-                MaterialButton(
-                  //TODO: Right now makes new account based on what's in email/pass fields, probably want a createUser page
-                  onPressed: _createUser,
-                  child: Text("Create New Account"),
-                )
-              ]
-            )
+              ),
+
+            ),
+
+
+            FlatButton(
+              onPressed: (){
+                _createUser();
+              },
+              child: Text("Create New Account", style: TextStyle(color: Colors.black),),
+              color: Colors.white,
+              height: 50,
+              minWidth: 150,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5),
+                side: BorderSide(color: Colors.black),
+              ),
+            ),
+
+
           ],
         ),
       ),

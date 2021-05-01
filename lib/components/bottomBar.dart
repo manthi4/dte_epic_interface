@@ -17,7 +17,7 @@ class bottomBar extends StatelessWidget {
               onPressed: (){
                 Navigator.pushReplacement(context, PageRouteBuilder(pageBuilder: (context, animation1, animation2) => graphPage(), transitionDuration: Duration(seconds: 0)));
               },
-              child: Icon(Icons.add),
+              child: Icon(Icons.add, color: Colors.white),
               color: Colors.pink[400],
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))
           ),

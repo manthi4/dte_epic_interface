@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Flutter Projects\\DTE\\dte_epic_interface\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-my\\values-my.xml",
+            "outputFile": "C:\\DTE\\dte_epic_interface\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-my\\values-my.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\rayge\\.gradle\\caches\\transforms-2\\files-2.1\\1cad50e824c2a91bda736a296b3e673e\\play-services-base-17.1.0\\res\\values-my\\values.xml",
+                    "source": "C:\\Users\\suman\\.gradle\\caches\\transforms-2\\files-2.1\\df356e3d0e1fe73e7a6353a47d231871\\jetified-play-services-basement-17.1.0\\res\\values-my\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "212",
+                        "endOffsets": "459"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1291",
+                        "endColumns": "212",
+                        "endOffsets": "1499"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\suman\\.gradle\\caches\\transforms-2\\files-2.1\\1cad50e824c2a91bda736a296b3e673e\\play-services-base-17.1.0\\res\\values-my\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\rayge\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\values-my\\values-my.xml",
+                    "source": "C:\\Users\\suman\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\values-my\\values-my.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -35,23 +52,6 @@
                         "startOffsets": "2948",
                         "endColumns": "100",
                         "endOffsets": "3044"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\rayge\\.gradle\\caches\\transforms-2\\files-2.1\\09feff95c1bbb06dd66ec927d992b60b\\jetified-play-services-basement-17.1.0\\res\\values-my\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "212",
-                        "endOffsets": "459"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1291",
-                        "endColumns": "212",
-                        "endOffsets": "1499"
                     }
                 }
             ]

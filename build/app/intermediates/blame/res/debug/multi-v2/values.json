@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Flutter Projects\\DTE\\dte_epic_interface\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\DTE\\dte_epic_interface\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\rayge\\.gradle\\caches\\transforms-2\\files-2.1\\1cad50e824c2a91bda736a296b3e673e\\play-services-base-17.1.0\\res\\values\\values.xml",
+                    "source": "C:\\Users\\suman\\.gradle\\caches\\transforms-2\\files-2.1\\1cad50e824c2a91bda736a296b3e673e\\play-services-base-17.1.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,33,46",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\rayge\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\values\\values.xml",
+                    "source": "C:\\Users\\suman\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,83,84,88,89,90,91,98,141,173,210",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -42,24 +42,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\rayge\\.gradle\\caches\\transforms-2\\files-2.1\\09feff95c1bbb06dd66ec927d992b60b\\jetified-play-services-basement-17.1.0\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "4,7",
-                        "startColumns": "0,0",
-                        "startOffsets": "238,401",
-                        "endColumns": "63,166",
-                        "endOffsets": "301,567"
-                    },
-                    "to": {
-                        "startLines": "84,94",
-                        "startColumns": "4,4",
-                        "startOffsets": "5259,6437",
-                        "endColumns": "67,166",
-                        "endOffsets": "5322,6599"
-                    }
-                },
-                {
-                    "source": "D:\\Flutter Projects\\DTE\\dte_epic_interface\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\DTE\\dte_epic_interface\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
@@ -75,6 +58,23 @@
                         "endLines": "109,112",
                         "endColumns": "12,12",
                         "endOffsets": "8093,8258"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\suman\\.gradle\\caches\\transforms-2\\files-2.1\\df356e3d0e1fe73e7a6353a47d231871\\jetified-play-services-basement-17.1.0\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "4,7",
+                        "startColumns": "0,0",
+                        "startOffsets": "238,401",
+                        "endColumns": "63,166",
+                        "endOffsets": "301,567"
+                    },
+                    "to": {
+                        "startLines": "84,94",
+                        "startColumns": "4,4",
+                        "startOffsets": "5259,6437",
+                        "endColumns": "67,166",
+                        "endOffsets": "5322,6599"
                     }
                 }
             ]

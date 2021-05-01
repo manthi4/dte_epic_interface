@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: Text("Discover"),
-        titleTextStyle: TextStyle(color: Colors.black),
+        // titleTextStyle: TextStyle(color: Colors.black),
       ),
       body: SingleChildScrollView(
         child: Column(
