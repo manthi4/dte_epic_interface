@@ -19,16 +19,29 @@ class User {
 
   static Future<void> initialize() async {
     currentUser = await _auth.currentUser;
-    await getUserData();
+    // await getUserData();
     print("User Initialized");
   }
 
-  static Future<void> getUserData() async {
-    var userID = currentUser.id;
-    await _fstore.collection('Users').where('id', isEqualTo: "$userID");
-    List<int> vals = [];
-
-  }
+  // static Future<void> getUserData() async {
+  //   var userID = currentUser.id;
+  //   await _fstore.collection('Users').where('id', isEqualTo: "$userID")
+  //       .getDocuments()
+  //       .then(
+  //         (thing) {
+  //       if (thing.documents.isNotEmpty) {
+  //         print("got userData");
+  //         _userData = thing.documents.single.data;
+  //         _userID = thing.documents.single.documentID;
+  //         print("UserID = $_userID");
+  //       } else {
+  //         print("userData not found!");
+  //       }
+  //     },
+  //   );
+  //   List<int> vals = [];
+  //
+  // }
 
   static Future<void> inputData(String data) async {
     print(data);

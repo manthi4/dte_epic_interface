@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/emilyjones/AndroidStudioProjects/dte_epic_interface/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
                     "source": "/Users/emilyjones/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/res/values-en-rCA/values-en-rCA.xml",
+=======
+            "outputFile": "C:\\DTE\\dte_epic_interface\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rCA\\values-en-rCA.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\suman\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\values-en-rCA\\values-en-rCA.xml",
+>>>>>>> 7e2d5895559e3e81da2ac6cbec377810f10a7fca
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

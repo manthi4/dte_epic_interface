@@ -1,3 +1,5 @@
+
+
 import 'package:dte_epic_interface/components/bigButton.dart';
 import 'package:dte_epic_interface/screens/graphPage.dart';
 import 'package:flutter/material.dart';
@@ -55,6 +57,9 @@ class _LoginPageState extends State<WelcomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            Image(
+              image: AssetImage("lib/images/DTElogo copy.jpg"),
+            ),
             TextField(
                 onSubmitted: (value) {
                   _email = value;
@@ -83,13 +88,21 @@ class _LoginPageState extends State<WelcomePage> {
                   buttonText: "LOG IN",
                   onClick: _login,
                 ),
-                MaterialButton(
-                  //TODO: Right now makes new account based on what's in email/pass fields, probably want a createUser page
-                  onPressed: _createUser,
-                  child: Text("Create New Account"),
-                )
               ]
-            )
+            ),
+            FlatButton(
+              onPressed: (){
+                _createUser();
+              },
+              child: Text("Create New Account", style: TextStyle(color: Colors.black),),
+              color: Colors.white,
+              height: 50,
+              minWidth: 150,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5),
+                side: BorderSide(color: Colors.black),
+              ),
+            ),
           ],
         ),
       ),

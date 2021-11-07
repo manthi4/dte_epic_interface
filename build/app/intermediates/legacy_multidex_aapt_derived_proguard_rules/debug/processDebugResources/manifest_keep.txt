@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # Referenced at /Users/emilyjones/AndroidStudioProjects/dte_epic_interface/build/app/intermediates/merged_manifests/debug/AndroidManifest.xml:23
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
 # Referenced at /Users/emilyjones/AndroidStudioProjects/dte_epic_interface/build/app/intermediates/merged_manifests/debug/AndroidManifest.xml:23
+=======
+# Referenced at C:\DTE\dte_epic_interface\build\app\intermediates\merged_manifests\debug\AndroidManifest.xml:23
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at C:\DTE\dte_epic_interface\build\app\intermediates\merged_manifests\debug\AndroidManifest.xml:23
+>>>>>>> 7e2d5895559e3e81da2ac6cbec377810f10a7fca
 -keep class io.flutter.app.FlutterApplication { <init>(); }

@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 [{"name":"/Users/emilyjones/AndroidStudioProjects/dte_epic_interface/build/app/intermediates/javac/debug/classes","index":0,"scopes":["PROJECT"],"types":["DEX_ARCHIVE"],"format":"DIRECTORY","present":true},{"name":"/Users/emilyjones/AndroidStudioProjects/dte_epic_interface/build/app/tmp/kotlin-classes/debug","index":1,"scopes":["PROJECT"],"types":["DEX_ARCHIVE"],"format":"DIRECTORY","present":true}]
+=======
+[{"name":"C:\\DTE\\dte_epic_interface\\build\\app\\intermediates\\javac\\debug\\classes","index":0,"scopes":["PROJECT"],"types":["DEX_ARCHIVE"],"format":"DIRECTORY","present":true},{"name":"C:\\DTE\\dte_epic_interface\\build\\app\\tmp\\kotlin-classes\\debug","index":1,"scopes":["PROJECT"],"types":["DEX_ARCHIVE"],"format":"DIRECTORY","present":true}]
+>>>>>>> 7e2d5895559e3e81da2ac6cbec377810f10a7fca
