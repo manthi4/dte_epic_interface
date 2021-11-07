@@ -8,7 +8,7 @@ import 'package:dte_epic_interface/user.dart';
 ///TODO: implement the get Data methods in the user.dart and pull that data to here
 /// remember, the user does not really need controle of the start/end date. They can see what they want with
 /// the graph scroll/zoom functions
-class graphPage extends StatelessWidget {
+class GraphPage extends StatelessWidget {
   static final route = "graph";
   @override
   Widget build(BuildContext context) {

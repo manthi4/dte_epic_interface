@@ -1,5 +1,0 @@
-version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
-options: "38f0e5101547b1ca5b725c97ef3c0b39"
-build_time: [1618420962, 643631000]
-inputs:
-  "/Users/emilyjones/AndroidStudioProjects/dte_epic_interface/ios/Runner/AppDelegate.swift": [1618171188, 912022991]
