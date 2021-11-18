@@ -6,6 +6,7 @@ import 'package:dte_epic_interface/user.dart';
 class VitalCard extends StatelessWidget {
   final String vital;
   final String image;
+  final accentColor = const Color.fromRGBO(236, 64, 122, 1.0);
 
   VitalCard({Key key, @required this.vital, @required this.image}) : super(key: key);
 
@@ -22,7 +23,7 @@ class VitalCard extends StatelessWidget {
     // pop up once card is clicked
     showDialog(
       context: context,
-      builder: (BuildContext context) {
+      builder: (context) {
         return BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 6, sigmaY: 6),
             child: AlertDialog(
@@ -33,11 +34,11 @@ class VitalCard extends StatelessWidget {
                 cursorColor: Colors.black,
                 decoration: InputDecoration(
                   enabledBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Colors.pink[400]),
+                    borderSide: BorderSide(color: accentColor),
                   ),
                   hintText: "Type here",
                   suffixIcon: IconButton(
-                    color: Colors.pink[400],
+                    color: accentColor,
                     onPressed: myController.clear,
                     icon: Icon(Icons.clear),
                   ),
@@ -81,21 +82,30 @@ class VitalCard extends StatelessWidget {
                 Image(
                   fit: BoxFit.cover,
                   image: AssetImage(image),
+                  // TODO: change to be relative to screen size
                   width: 400.0,
                   height: 350.0,
                 ),
                 Positioned(
+                  // TODO: change to be relative to screen size
                     bottom: 0,
-                    height: 65,
+                    height: 100,
                     width: 400.0,
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.grey[700].withOpacity(0.7),
+                        gradient: LinearGradient(
+                          begin: Alignment(0, 0.1),
+                          end: Alignment(0, -0.8),
+                          colors: [
+                            Colors.grey[850].withOpacity(0.65),
+                            Colors.transparent,
+                          ],
+                        ),
                         borderRadius: BorderRadius.only(
                             bottomRight: Radius.circular(25),
                             bottomLeft: Radius.circular(25))),
                       child: Padding(
-                        padding: EdgeInsets.fromLTRB(25, 17, 0, 0),
+                        padding: EdgeInsets.fromLTRB(25, 50, 0, 0),
                         child: Text(
                           vital,
                           style: TextStyle(color: Colors.white, fontSize: 25),

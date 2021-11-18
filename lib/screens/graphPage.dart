@@ -14,8 +14,7 @@ import 'package:dte_epic_interface/components/editDataPopup.dart';
 ///TODO: call the popup for adding data
 /// remember, the user does not really need controle of the start/end date. They can see what they want with
 /// the graph scroll/zoom functions
-
-class graphPage extends StatelessWidget {
+class GraphPage extends StatelessWidget {
   static final route = "graph";
   @override
   Widget build(BuildContext context) {
