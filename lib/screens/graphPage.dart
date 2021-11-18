@@ -19,7 +19,7 @@ class GraphPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //sets the start and end dates of the graph
-    final fromDate = DateTime(2017, 05, 22);
+    final fromDate = DateTime(2020, 05, 22);
     final toDate = DateTime.now();
 
 
@@ -37,6 +37,7 @@ class GraphPage extends StatelessWidget {
                   bezierChartScale: BezierChartScale.WEEKLY,
                   toDate: toDate,
                   selectedDate: toDate,
+                  bezierChartAggregation: BezierChartAggregation.AVERAGE,
 
                   series: [
                     BezierLine(
